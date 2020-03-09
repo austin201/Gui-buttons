@@ -62,21 +62,21 @@ class Application(Frame):
         self.bttn_clicks -=1
         self.lbl.config(text="You have clicked the button " + str(self.bttn_clicks) + " times.")
         if self.bttn_clicks > 0:
-            self.lbl.config(bg = "lightblue")
+            self.lbl.config(bg = "cornflowerblue")
         elif self.bttn_clicks ==0:
             self.lbl.config(bg = "blue")
         else:
-            self.lbl.config(bg = "cornflowerblue")
+            self.lbl.config(bg = "lightblue")
 
     def reset(self):
         self.bttn_clicks = 0
         self.lbl.config(text="You have clicked the button " + str(self.bttn_clicks) + " times.")
         if self.bttn_clicks > 0:
-            self.lbl.config(bg="lightblue")
+            self.lbl.config(bg="cornflowerblue")
         elif self.bttn_clicks == 0:
             self.lbl.config(bg="blue")
         else:
-            self.lbl.config(bg="cornflowerblue")
+            self.lbl.config(bg="lightblue")
 
 def main():
     root = Tk()
