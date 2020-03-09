@@ -30,17 +30,20 @@ class Application(Frame):
         self.bttn3["text"] = "Reset the times clicked."
         self.bttn3["command"] = self.reset
 
-        self.lbl1 = Label(self, text = "The background color is blue.").grid()
+
+        self.lbl1 = Label(self, text = "The background color is blue.")
+        self.lbl1.grid()
         self.bttn4 = Button(self)
         self.bttn4.grid()
         self.bttn4["text"] = "Change background color."
         self.bttn4["command"] = self.backgrond
 
+
     def backgrond(self):
         colors = ["blue", "red", "black", "cornflowerblue", "pink", "purple", "green"]
         color = random.choice(colors)
         self.master.config(bg = color)
-        self.lbl1.config(self, text="The background color is "+color+".").grid()
+        self.lbl1.config(text="Background color is "+color+".")
 
 
 
